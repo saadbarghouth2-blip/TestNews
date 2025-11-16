@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PulseNews — Article</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+</head>
+<body class="light">
+
+<header class="header">
+  <div class="header-grid">
+    <div class="logo-area" id="logoArea2">
+      <div class="logo-icon" aria-hidden="true"></div>
+      <div class="logo-text">PulseNews</div>
+    </div>
+
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-link">Home</a>
+    </nav>
+
+    <div class="controls">
+      <button id="themeToggleArticle" class="btn-ghost">Dark</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="article-page" id="articlePage">
+    <!-- injected content -->
+    <div class="article-skeleton" id="articleSkeleton">
+      <div style="height:36px;width:60%;background:rgba(255,255,255,0.04);border-radius:6px;margin-bottom:12px"></div>
+      <div style="height:220px;width:100%;background:rgba(255,255,255,0.03);border-radius:10px;margin-bottom:14px"></div>
+      <div style="height:14px;width:100%;background:rgba(255,255,255,0.03);border-radius:6px;margin-bottom:8px"></div>
+      <div style="height:14px;width:90%;background:rgba(255,255,255,0.03);border-radius:6px;margin-bottom:8px"></div>
+      <div style="height:14px;width:80%;background:rgba(255,255,255,0.03);border-radius:6px;margin-bottom:8px"></div>
+    </div>
+  </article>
+
+  <aside class="suggested" id="suggestedArea">
+    <h3>Suggested</h3>
+    <div id="suggestedList" class="suggested-list"></div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">© <span id="yearArticle"></span> PulseNews</div>
+</footer>
+
+<script src="article.js"></script>
+</body>
+</html>

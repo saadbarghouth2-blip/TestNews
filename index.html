@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PulseNews — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+</head>
+<body class="light">
+
+<header class="header">
+  <div class="header-grid">
+    <div class="logo-area" id="logoArea">
+      <div class="logo-icon" aria-hidden="true"></div>
+      <div class="logo-text">PulseNews</div>
+    </div>
+
+    <nav class="nav" aria-label="Main">
+      <a href="#latest" class="nav-link">Latest</a>
+      <a href="#sports" class="nav-link">Sports</a>
+      <a href="#business" class="nav-link">Business</a>
+      <a href="#tech" class="nav-link">Tech</a>
+      <a href="#wars" class="nav-link">Wars</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="controls">
+      <button id="themeToggle" class="btn-ghost" aria-pressed="false">Dark</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero-pro">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Your World. Your News.</h1>
+    <p class="hero-sub">Sports • Business • Tech • Politics • Wars • Breaking</p>
+    <a href="#latest" class="btn hero-btn">Start Reading</a>
+  </div>
+</section>
+
+<main>
+  <section id="latest" class="section">
+    <h2 class="section-title">Latest</h2>
+    <div id="latestNews" class="articles-grid" aria-live="polite"></div>
+  </section>
+
+  <section id="sports" class="section">
+    <h2 class="section-title">Sports</h2>
+    <div id="sportsNews" class="articles-grid" aria-live="polite"></div>
+  </section>
+
+  <section id="business" class="section">
+    <h2 class="section-title">Business</h2>
+    <div id="businessNews" class="articles-grid" aria-live="polite"></div>
+  </section>
+
+  <section id="tech" class="section">
+    <h2 class="section-title">Technology</h2>
+    <div id="techNews" class="articles-grid" aria-live="polite"></div>
+  </section>
+
+  <section id="wars" class="section">
+    <h2 class="section-title">War & Politics</h2>
+    <div id="warsNews" class="articles-grid" aria-live="polite"></div>
+  </section>
+
+<!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:saadbarghouth11@gmail.com">saadbarghouth11@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saadbarghouth" target="_blank">linkedin.com/in/saadbarghouth</a></li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/people/Saad-Elsayed-Barghouth/pfbid028ACqMYzhk7Q1CGLg5W5MbvGW753SMVX8iKREjETAqnq7Damh4Tx84gbSEfmFF8XAl/" target="_blank">Saad Elsayed Barghouth</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/saadbarghouth2-blip" target="_blank">github.com/saadbarghouth2-blip</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+201067431264">+20 106 743 1264</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">© <span id="year"></span> PulseNews</div>
+</footer>
+
+<button id="backTop" class="back-top" aria-label="Back to top">▲</button>
+
+<script src="script.js"></script>
+</body>
+</html>
