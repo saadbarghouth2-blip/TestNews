@@ -1,6 +1,8 @@
 // script.js — Home & categories
 // Replace API_KEY with your Mediastack key if needed
 const API_KEY = "pub_b2929075bbbc4c5aa5ea4bce177c4ea4";
+const BASE_URL = `https://newsdata.io/api/1/latest? 
+  apikey=pub_b2929075bbbc4c5aa5ea4bce177c4ea4`;
 
 // mapping: sectionId -> category param
 const CATEGORIES = {
