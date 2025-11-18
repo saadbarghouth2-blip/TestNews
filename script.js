@@ -1,6 +1,6 @@
 // script.js — Home & categories
 // Replace API_KEY with your Mediastack key if needed
-const API_KEY = "9bd3212352b5272b3ebc0c0a5609e135";
+const API_KEY = "pub_b2929075bbbc4c5aa5ea4bce177c4ea4";
 
 // mapping: sectionId -> category param
 const CATEGORIES = {
@@ -38,8 +38,7 @@ async function loadCategory(category, elementId, offset = 0) {
   try {
     // Mediastack supports offset param
     const res = await fetch(
-      `https://api.mediastack.com/v1/news?access_key=${API_KEY}&languages=en&limit=12&offset=${offset}&categories=${encodeURIComponent(category)}`
-    );
+      `https://newsdata.io/api/1/latest? apikey=pub_b2929075bbbc4c5aa5ea4bce177c4ea4`);
     const data = await res.json();
     const items = data.data || [];
 
